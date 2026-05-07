@@ -1,4 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <odoo>
+    <!-- Definición de la vista tipo lista -->
+    <record id="view_gestion_tarea_list" model="ir.ui.view">
+        <field name="name">gestion.tarea.list</field>
+        <field name="model">gestion.tarea</field>
+        <field name="arch" type="xml">
+            <list string="Tareas">
+                <field name="nombre"/>
+                <field name="cliente_id"/>
+                <field name="fecha"/>
+                <field name="estado"/>
+            </list>
+        </field>
+    </record>
     
+    <!-- Vista formulario -->
+    <record id="view_gestion_tarea_form" model="ir.ui.view">
+        <field name="name">gestion.tarea.form</field>
+        <field name="model">gestion.tarea</field>
+        <field name="arch" type="xml">
+            <form string="Tarea">
+                <header>
+                    <button name="action_marcar_finalizada"
+                            type="object"
+                            string="Marcar como finalizada"
+                            class="btn-primary"
+                            invisible="estado == 'finalizada'"/>
+                </header>
+
+                <sheet>
+                    <group>
+                        <field name="nombre"/>
+                        <field name="cliente_id"/>
+                        <field name="fecha"/>
+                        <field name="estado"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Vista busqueda -->
+    <record id="view_gestion_tarea_search" model="ir.ui.view">
+        <field name="name">gestion.tarea.search</field>
+        <field name="model">gestion.tarea</field>
+        <field name="arch" type="xml">
+            <search string="Buscar Tareas">
+                <field name="nombre"/>
+                <field name="cliente_id"/>
+                <filter name="filtro_pendientes"
+                        string="Tareas pendientes"
+                        domain="[('estado', '=', 'pendiente')]"/>
+                <group expand="0" string="Agrupar por">
+                    <filter name="group_cliente"
+                            string="Cliente"
+                            context="{'group_by': 'cliente_id'}"/>
+
+                </group>
+            </search>
+        </field>
+    </record>
 </odoo>
