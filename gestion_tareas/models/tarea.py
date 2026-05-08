@@ -2,7 +2,7 @@ from odoo import models, fields
 
 class Tarea(models.Model):
     _name = "gestion.tarea"
-    _descripción = "Tarea realizada sobre cliente"
+    _descripcion = "Tarea realizada sobre cliente"
     _order = "fecha desc, id desc"
 
     nombre = fields.Char(
