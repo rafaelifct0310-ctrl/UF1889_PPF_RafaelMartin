@@ -80,6 +80,6 @@
     <menuitem id="menu_gestion_tareas"
               name="Tareas"
               parent="menu_gestion_tareas_root"
-              action="action_gestion_tareas"
+              action="action_gestion_tarea"
               sequence="10"/>
 </odoo>
