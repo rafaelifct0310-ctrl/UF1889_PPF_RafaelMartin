@@ -47,7 +47,7 @@
         <field name="arch" type="xml">
             <search string="Buscar Tareas">
                 <field name="nombre"/>
-                <field name="cliente_id"/>
+                <!--<field name="cliente_id"/>
                 <filter name="filtro_pendientes"
                         string="Tareas pendientes"
                         domain="[('estado', '=', 'pendiente')]"/>
@@ -58,7 +58,7 @@
                     <filter name="group_estado"
                             string="Estado"
                             context="{'group_by': 'estado'}"/>
-                </group>
+                </group>-->
             </search>
         </field>
     </record>
