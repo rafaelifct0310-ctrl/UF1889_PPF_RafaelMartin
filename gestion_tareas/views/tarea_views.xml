@@ -48,7 +48,7 @@
             <search string="Buscar Tareas">
                 <field name="nombre"/>
                 <field name="cliente_id"/>
-                <filter name="filtro_pendientes"
+                <!--<filter name="filtro_pendientes"
                         string="Tareas pendientes"
                         domain="[('estado', '=', 'pendiente')]"/>
                 <group expand="0" string="Agrupar por">
@@ -58,7 +58,7 @@
                     <filter name="group_estado"
                             string="Estado"
                             context="{'group_by': 'estado'}"/>
-                </group>
+                </group>-->
             </search>
         </field>
     </record>
