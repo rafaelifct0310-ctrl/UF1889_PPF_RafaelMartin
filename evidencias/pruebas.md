@@ -76,4 +76,4 @@ exportación.csv
 
 # Conclusión
 
-El módulo funciona correctamente y cumple los requisitos solicitados an la práctica.
+El módulo funciona correctamente y cumple los requisitos solicitados en la práctica.
