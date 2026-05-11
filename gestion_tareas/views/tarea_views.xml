@@ -41,7 +41,7 @@
     </record>
 
     <!-- Vista busqueda -->
-    <record id="gestion_tareas.view_gestion_tarea_search" model="ir.ui.view">
+    <record id="view_gestion_tarea_search" model="ir.ui.view">
         <field name="name">gestion.tarea.search</field>
         <field name="model">gestion.tarea</field>
         <field name="arch" type="xml">
