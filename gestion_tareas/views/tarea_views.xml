@@ -41,7 +41,7 @@
     </record>
 
     <!-- Vista busqueda -->
-    <record id="view_gestion_tarea_search" model="ir.ui.view">
+    <record id="gestion_tareas.view_gestion_tarea_search" model="ir.ui.view">
         <field name="name">gestion.tarea.search</field>
         <field name="model">gestion.tarea</field>
         <field name="arch" type="xml">
@@ -69,7 +69,7 @@
         <field name="name">Tareas</field>
         <field name="res_model">gestion.tarea</field>
         <field name="view_mode">list,form</field>
-        <field name="search_view_id" ref="view_gestion_tarea_search"/>
+        <field name="search_view_id" ref="gestion_tareas.view_gestion_tarea_search"/>
     </record>
 
     <!-- Menú principal del módulo -->
