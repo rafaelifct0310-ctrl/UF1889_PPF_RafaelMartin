@@ -51,10 +51,12 @@
                 <filter name="filtro_pendientes"
                         string="Tareas pendientes"
                         domain="[('estado', '=', 'pendiente')]"/>
-                <!--<group expand="0" string="Agrupar por">
-                    <filter name="group_cliente"
+                <separator/>
+                <filter name="group_cliente"
                             string="Cliente"
                             context="{'group_by': 'cliente_id'}"/>
+                <!--<group expand="0" string="Agrupar por">
+                    
                     <filter name="group_estado"
                             string="Estado"
                             context="{'group_by': 'estado'}"/>
