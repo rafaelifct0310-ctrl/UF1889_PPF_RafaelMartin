@@ -54,13 +54,10 @@
                 <separator/>
                 <filter name="group_cliente"
                             string="Cliente"
-                            context="{'group_by': 'cliente_id'}"/>
-                <!--<group expand="0" string="Agrupar por">
-                    
-                    <filter name="group_estado"
-                            string="Estado"
-                            context="{'group_by': 'estado'}"/>
-                </group>-->
+                            context="{'group_by': 'cliente_id'}"/>                   
+                <filter name="group_estado"
+                        string="Estado"
+                        context="{'group_by': 'estado'}"/>
             </search>
         </field>
     </record>
